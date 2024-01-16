@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./scss-styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-info">
+            <div class="hamburger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <h1>sneakers</h1>
+            </div>
+            <nav class="nav-list-container">
+                <ul class="nav-list">
+                    <li class="hide-container">
+                        <i class="fa-solid fa-x"></i>
+                    </li>
+                    <li>Collections</li>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="user-info">
+            <div class="cart-container">
+                <div class="cart-order-quantity">0</div>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="user-pic-container">
+                <img src="./imgs/image-avatar.png" alt="user profile picture">
+            </div>
+        </div>
+    </header>
+    <div class="orders-container">
+        <div class="cart">
+            <h3>Cart</h3>
+        </div>
+        <div class="order-info-container">
+            
+        </div>
+    </div>
+    <main class="product-section">
+        <div class="product-images">
+            <div class="product-big-img">
+                <img id="big-img" src="./imgs/image-product-1.jpg" alt="Sneakers big image">
+            </div>
+            <div class="sub-imgs-container">
+                <div class="sub-img default">
+                    <img class="gallery-img" src="./imgs/image-product-1-thumbnail.jpg" alt="Sneakers">
+                </div>
+                <div class="sub-img">
+                    <img class="gallery-img" src="./imgs/image-product-2-thumbnail.jpg" alt="Sneakers">
+                </div>
+                <div class="sub-img">
+                    <img class="gallery-img" src="./imgs/image-product-3-thumbnail.jpg" alt="Sneakers">
+                </div>
+                <div class="sub-img">
+                    <img class="gallery-img" src="./imgs/image-product-4-thumbnail.jpg" alt="Sneakers">
+                </div>
+            </div>
+        </div>
+        <div class="product-info">
+            <h3 class="sneaker-company">sneaker company</h3>
+            <h2 class="product-title">
+                Fall limited edition 
+                <br>sneakers
+            </h2>
+            <p class="sneaker-details">
+                These low-profile sneakers are your perfect casual wear companion. 
+                Featuring a durable rubber outer sole, they'll withstand everything
+                the weather can offer.
+            </p>
+            <h3 class="price">
+                <span class="current-price">$125.00</span>
+                <span class="discount-percentage">50%</span>
+                <span class="original-price">$250.00</span>
+            </h3>
+            <div class="order-container">
+                <div class="order-quantity-container">
+                    <button class="decrease-btn btn">
+                        <i class="fa-solid fa-minus fa-lg"></i>
+                    </button>
+                    <span class="order-quantity-text">0</span>
+                    <button class="increase-btn btn">
+                        <i class="fa-solid fa-plus fa-lg"></i>
+                    </button>
+                </div>
+                <div class="add-to-cart-container">
+                    <button class="add-to-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="add-to-cart-text">Add to cart</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="light-box-container">     
+        <div class="product-images">
+            <div class="hide-light-box">
+                <i class="fa-solid fa-x light-box-x"></i>
+            </div>
+            <div class="product-big-img">
+                <img id="light-box-big-img" src="./imgs/image-product-1.jpg" alt="Sneakers big image">
+            </div>
+            <div class="sub-imgs-container">
+                <div class="sub-img default">
+                    <img class="light-box-gallery-imgs" src="./imgs/image-product-1-thumbnail.jpg" alt="Sneakers">
+                </div>
+                <div class="sub-img">
+                    <img class="light-box-gallery-imgs" src="./imgs/image-product-2-thumbnail.jpg" alt="Sneakers">
+                </div>
+                <div class="sub-img">
+                    <img class="light-box-gallery-imgs" src="./imgs/image-product-3-thumbnail.jpg" alt="Sneakers">
+                </div>
+                <div class="sub-img">
+                    <img class="light-box-gallery-imgs" src="./imgs/image-product-4-thumbnail.jpg" alt="Sneakers">
+                </div>
+            </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

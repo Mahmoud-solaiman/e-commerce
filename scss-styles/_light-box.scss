@@ -1,0 +1,37 @@
+.light-box-container {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    display: none;
+    align-items:center;
+    flex-direction: column;
+    background-color:rgba(0,0,0,.75);
+    padding-top:10%;
+    & .product-images {
+        position: relative;
+        width:35%;
+    }
+    & .sub-imgs-container {
+        width:85%;
+        margin:0 auto;
+    }
+}
+
+.hide-light-box {
+    margin-bottom:10px;
+    position:absolute;
+    right:0;
+    top:-30px;
+    cursor:pointer;
+    &:hover i {
+        color:$primary-color;
+    }
+    & i {
+        font: {
+        weight:map-get($font-weights, huge);
+        size:1.3rem;
+        }
+    }
+}

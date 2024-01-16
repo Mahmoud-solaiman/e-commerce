@@ -1,0 +1,37 @@
+.product-big-img {
+    width:100%;
+    margin-bottom:25px;
+    cursor:pointer;
+    & img {
+        width:100%;
+        border-radius: 20px;
+    }
+}
+
+.sub-imgs-container {
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:25px;
+    .sub-img {
+        font-size:0;
+        cursor:pointer;
+        &:active img {
+            opacity:.6;
+        }
+
+        & img {
+            width:100%;
+            border-radius:10px;
+        }
+    }
+}
+
+.default {
+    border:2px solid $primary-color;
+    border-radius:12px;
+
+    & img {
+        opacity: .6;
+    }
+}

@@ -1,0 +1,25 @@
+@import 'variables';
+
+*, *::after, *::before {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+@font-face{
+    font-family:'Kumbh Sans';
+    src: url('../KumbhSans-VariableFont_YOPQ\,wght.ttf');
+}
+
+body {
+    font-family: 'Kumbh Sans';
+    background-color:hsl(223, 64%, 98%);
+}
+
+@import 'header';
+@import 'product-section';
+@import 'light-box';
+@import 'orders';
+
+@import 'responsive-header';
+@import 'product-section-responsive';

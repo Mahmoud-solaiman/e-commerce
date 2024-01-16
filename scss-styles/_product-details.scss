@@ -1,0 +1,116 @@
+.product-info {
+    padding-top:50px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.sneaker-company {
+    color:$primary-color;
+    text-transform:uppercase;
+    font-size:.95rem;
+}
+
+.product-title {
+    font: {
+        size:2.7rem;
+        weight:map-get($font-weights, bold);
+    }
+    line-height:45px;
+    text-transform:capitalize;
+    color:$headings-color;
+    margin-bottom:15px;
+}
+
+.sneaker-details {
+    line-height:25px;
+    color:$text-color;
+    margin-bottom:10px;
+}
+
+.current-price {
+    font-size:1.6rem;
+    color:$headings-color;
+}
+
+.discount-percentage {
+    margin-left:10px;
+    color:$primary-color;
+    font-size:1rem;
+    background-color:$active-img-color;
+    padding:5px 10px;
+    border-radius:5px;
+}
+
+.original-price {
+    color:$original-price;
+    font-size:.97rem;
+    text-decoration-line:line-through;
+    display: block;
+}
+
+.order-container {
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+.order-quantity-container {
+    width:35%;
+    background-color:rgb(235, 235, 235);
+    display:flex;
+    padding:1em;
+    border-radius:10px;
+    justify-content: space-between;
+
+    & span {
+        font: {
+            size:1.15rem;
+            weight:map-get($font-weights, bold)
+        }
+    }
+    .btn {
+        border:none;
+        background:transparent;
+        color:$primary-color;
+        cursor:pointer;
+        &:active {
+            opacity:.8;
+        }
+
+        & i {
+            
+            font-weight:map-get($font-weights, huge);
+        }   
+    }    
+}
+
+.add-to-cart {
+    text-align:center;
+    font-size:1.2rem;
+    padding:.8em 3.5em;
+    border:none;
+    border-radius:10px;
+    background-color:$primary-color;
+    cursor:pointer;
+    &:hover {
+        opacity:.8;
+    }
+    &:active {
+        opacity:.6;
+    }
+
+    .add-to-cart-text {
+        font-size:.96rem;
+        color:#fff;
+        font-weight:map-get($font-weights, bold);
+    }
+
+    .fa-cart-shopping {
+        color:#fff;
+        font-size:.97rem;
+        margin-right:10px;
+    }
+
+}

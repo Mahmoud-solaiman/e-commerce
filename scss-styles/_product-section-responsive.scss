@@ -1,0 +1,65 @@
+@media (max-width:375px){
+    .product-section {
+        width:100%;
+        grid-template-columns:100%;
+        gap:2vh;
+        padding:0;
+    }
+    .product-big-img {
+        margin-bottom:5px;
+        & img {
+            border-radius:0;
+        }
+    }
+    .sub-imgs-container {
+        display:none;
+    }
+    .product-info {
+        padding:0 20px;
+        gap:10px;
+    }
+    .sneaker-company {
+        font-size:.87rem;
+    }
+    .product-title {
+        font-size:2rem;
+        line-height:32px;
+        margin-bottom:5px;
+    }
+    .sneaker-details {
+        font-size:.97rem;
+        margin:0;
+    }
+    .price {
+        display: grid;
+        grid-template-columns:28% 18% 1fr;
+        align-items:center;
+        .discount-percentage {
+            border-radius:15px;
+        }
+
+        .original-price {
+            justify-self: end;
+        }
+    }
+    .order-container {
+        flex-direction:column;
+        padding-bottom:20px;
+    }
+    .order-quantity-container {
+        width:100%;
+        justify-content:space-between;
+        & span {
+            font-size:1.2rem;
+            font-weight:map-get($font-weights, bold);
+            color:$headings-color;
+        }
+    }
+    .add-to-cart-container {
+        width:100%;
+    }
+    .add-to-cart {
+        padding:.8em 0;
+        width:100%;
+    }
+}

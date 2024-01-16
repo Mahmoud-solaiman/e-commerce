@@ -1,0 +1,68 @@
+@media (max-width:375px){
+    .hamburger-menu {
+        display:block;
+        padding-top:10px;
+    }
+    .header {
+        width:100%;
+        margin:0;
+        border:none;
+        padding:2% 3%;
+        gap: 25%;
+        .header-info {
+            & .logo h1 {
+                font-size:2rem;
+            }
+            gap:3vw;
+            & .hamburger-menu i {
+                font-size:1.3rem;
+                color:$text-color;
+            }
+        }
+    }
+    .nav-list {
+        display:block;
+        transition:.3s linear;
+        translate:-100% 0;
+        position:fixed;
+        z-index:999;
+        left:0;
+        top:0;
+        bottom:0;
+        right:32%;
+        background-color:#fff;
+        .hide-container {
+            display:block;
+            padding:25px 0 40px 30px;
+            font-weight:map-get($font-weights, bold);
+            color:$original-price;
+        }
+        li {
+            font-size:1.3rem;
+            padding:15px 30px;
+            color:$headings-color;
+            font-weight:map-get($font-weights, bold);
+            &::after{
+                display:none;
+            }
+        }
+    }
+    .user-info {
+        padding-top:10px;
+        width:100%;
+        justify-content: space-evenly;
+        justify-self:start;
+        .cart-container {
+            .fa-cart-shopping {
+                font-size:1.2rem;
+            }
+        }
+        .user-pic-container img {
+            width:25px;
+        }
+    }
+}
+
+.nav-list-toggle {
+    translate:0;
+}
