@@ -1,4 +1,4 @@
-@media (max-width:375px){
+@media (max-width:740px){
     .product-section {
         width:100%;
         grid-template-columns:100%;
@@ -60,6 +60,24 @@
     }
     .add-to-cart {
         padding:.8em 0;
+        width:100%;
+    }
+}
+
+@media (max-width:1140px){
+    .add-to-cart-container {
+        width:70%;
+
+        & .add-to-cart {
+            width:100%;
+            padding:.95em 0;
+        }
+    }
+}
+
+
+@media (max-width:740px){
+    .add-to-cart-container {
         width:100%;
     }
 }

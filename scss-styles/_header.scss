@@ -34,7 +34,7 @@
             left:0;
             transition: .2s linear;
         }
-        &:active {
+        &:hover {
             &::after {
                 width:100%;
             }
@@ -75,7 +75,7 @@
     cursor:pointer;
     img {
         width:50px;
-        &:active {
+        &:hover {
             outline:2px solid $primary-color;
             border-radius: 50%;
         }

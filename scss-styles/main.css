@@ -51,7 +51,7 @@ body {
   left: 0;
   transition: 0.2s linear;
 }
-.nav-list li:active::after {
+.nav-list li:hover::after {
   width: 100%;
 }
 
@@ -89,7 +89,7 @@ body {
 .user-pic-container img {
   width: 50px;
 }
-.user-pic-container img:active {
+.user-pic-container img:hover {
   outline: 2px solid hsl(26, 100%, 55%);
   border-radius: 50%;
 }
@@ -392,32 +392,11 @@ body {
     font-size: 1.3rem;
     color: hsl(219, 9%, 45%);
   }
-  .nav-list {
-    display: block;
-    transition: 0.3s linear;
-    translate: -100% 0;
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 32%;
-    background-color: #fff;
-  }
   .nav-list .hide-container {
-    display: block;
-    padding: 25px 0 40px 30px;
-    font-weight: 700;
-    color: hsl(220, 14%, 75%);
+    font-size: normal;
   }
   .nav-list li {
-    font-size: 1.3rem;
     padding: 15px 30px;
-    color: hsl(220, 13%, 13%);
-    font-weight: 700;
-  }
-  .nav-list li::after {
-    display: none;
   }
   .user-info {
     padding-top: 10px;
@@ -432,11 +411,56 @@ body {
     width: 25px;
   }
 }
+@media (max-width: 740px) {
+  .hamburger-menu {
+    display: block;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+  .hamburger-menu i {
+    font-size: 2rem;
+  }
+  .header {
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 2% 3%;
+  }
+  .nav-list {
+    display: block;
+    transition: 0.3s linear;
+    translate: -100% 0;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 32%;
+    background-color: #fff;
+  }
+  .nav-list .hide-container {
+    display: block;
+    padding: 20px;
+    font-weight: 700;
+    color: hsl(220, 14%, 75%);
+    font-size: 1.5rem;
+    text-align: end;
+  }
+  .nav-list li {
+    font-size: 1.3rem;
+    padding: 30px 10px;
+    color: hsl(220, 13%, 13%);
+    font-weight: 700;
+  }
+  .nav-list li::after {
+    display: none;
+  }
+}
 .nav-list-toggle {
   translate: 0;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 740px) {
   .product-section {
     width: 100%;
     grid-template-columns: 100%;
@@ -497,6 +521,20 @@ body {
   }
   .add-to-cart {
     padding: 0.8em 0;
+    width: 100%;
+  }
+}
+@media (max-width: 1140px) {
+  .add-to-cart-container {
+    width: 70%;
+  }
+  .add-to-cart-container .add-to-cart {
+    width: 100%;
+    padding: 0.95em 0;
+  }
+}
+@media (max-width: 740px) {
+  .add-to-cart-container {
     width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

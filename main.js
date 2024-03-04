@@ -153,10 +153,10 @@ cart.addEventListener('pointerup', ()=>{
     } 
 });
 
-toggleMenu.addEventListener('touchend', ()=>{
+toggleMenu.addEventListener('pointerup', ()=>{
     navList.classList.add('nav-list-toggle');
 });
 
-cancelBtn.addEventListener('touchend', ()=>{
+cancelBtn.addEventListener('pointerup', ()=>{
     navList.classList.remove('nav-list-toggle');
 });
